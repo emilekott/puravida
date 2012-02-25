@@ -1,2 +1,73 @@
-/* This file will hold styles for the mobile version of your website (mobile first). */
-/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+body{
+    background: url('../images/bg.jpg') repeat;
+}
+
+.page{
+    background: url('../images/shadow.png') repeat-y center;
+}
+
+.zone{
+    background-color: #fff;
+}
+
+
+
+/*header stuff */
+
+.block-1 p{
+    margin: 0;
+}
+
+
+/*Top Navigation ==================================================== */
+div.navigation{
+    margin-top: 16px; /*was 38... */
+    font-size: 15px;
+    height: 35px;
+    background-color: #363636;
+}
+
+
+div.navigation a{
+    color: #fff;
+    text-decoration: none;
+}
+
+div.navigation li a{
+    padding: 0px 54px;
+    margin: 0; 
+}
+
+
+div.navigation li{
+    margin: 0;
+    padding:  6px 0 7px 0;
+    float: left;
+    border-right: 1px solid #fff;
+}
+
+div.navigation li.last{
+    border-right: none;
+
+}
+
+div.navigation li.last a{
+    padding: 0 57px; /*hack - may not work in all browsers...*/
+}
+
+div.navigation li:hover{
+    background-color: #e6e6e8;
+}
+
+div.navigation li:hover a{
+    color: #363636;
+}
+
+
+div.navigation li.active-trail{
+    background-color: #ff7f00;
+}
+
+.front div.navigation li.active{
+    background-color: #ff7f00;
+}

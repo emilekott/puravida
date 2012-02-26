@@ -21,7 +21,7 @@ body{
 
 /*Top Navigation ==================================================== */
 div.navigation{
-    margin-top: 16px; /*was 38... */
+    margin-top: 10px;
     font-size: 15px;
     height: 35px;
     background-color: #363636;
@@ -70,4 +70,8 @@ div.navigation li.active-trail{
 
 .front div.navigation li.active{
     background-color: #ff7f00;
+}
+
+.node-type-home-page div.navigation{
+    margin-bottom: 10px;
 }

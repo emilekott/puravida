@@ -1,0 +1,9 @@
+<?php
+
+function node_slideshow_node_view($node, $view_mode, $langcode){
+    if (($node->type == 'index_page') || ($node->type == 'content_page') ||($node->type == 'staff_profile_page') ) {
+        $path = libraries_get_path('jquery.cycle');
+        drupal_add_js($path.'/jquery.cycle.all.js');
+        drupal_add_js(drupal_get_path('module', 'node_slideshow').'/script.js');
+    }
+}

@@ -18,6 +18,10 @@ body{
     margin: 0;
 }
 
+.block-uc-cart{
+    margin-top: 25px;
+}
+
 
 /*Top Navigation ==================================================== */
 div.navigation{
@@ -34,7 +38,7 @@ div.navigation a{
 }
 
 div.navigation li a{
-    padding: 0px 54px;
+    padding: 0px 20px;
     margin: 0; 
 }
 
@@ -47,12 +51,12 @@ div.navigation li{
 }
 
 div.navigation li.last{
-    border-right: none;
+   /* border-right: none;*/
 
 }
 
 div.navigation li.last a{
-    padding: 0 57px; /*hack - may not work in all browsers...*/
+    /*padding: 0 5px; /*hack - may not work in all browsers...*/
 }
 
 div.navigation li:hover{
@@ -74,4 +78,73 @@ div.navigation li.active-trail{
 
 .node-type-home-page div.navigation{
     margin-bottom: 10px;
+}
+
+
+/*slideshow*/
+.field-name-field-slideshow{
+    z-index: -1;
+}
+
+.field-name-field-slideshow .field-items .field-item {
+    display:none;
+}
+
+.field-name-field-slideshow .field-items .value-0{
+    display: block;
+}
+
+
+#slide-nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+#slide-nav a { height: 40px; width: 40px; border: 1px solid #ccc; border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; background: #363636; text-decoration: none; margin: 0 5px; padding: 3px 5px; color: #fff; }
+#slide-nav a.activeSlide { background: #ff7f00}
+#slide-nav a:focus { outline: none; }
+
+/*news homepage view*/
+.view-news.view-id-news.view-display-id-block table{
+    border: 3px solid #363636;
+    border-collapse: collapse;
+    -webkit-box-shadow:0 0 5px #363636; /* this item draw table border  */ 
+    box-shadow: 0 0 5px #363636;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border-style: hidden; /* hide standart table (collapsed) border */
+}
+
+
+
+.view-news.view-id-news.view-display-id-block td{
+    padding: 5px 0 5px 10px;
+    position: relative;
+
+    float: left;
+        
+}
+
+.view-news.view-id-news.view-display-id-block .views-field-title{
+    position: absolute;
+
+    bottom: 5px;
+    left: 10px;
+    width: 225px;
+    background: url('../images/opaque-grey.png') repeat;
+    padding: 10px 0;
+}
+
+.view-news.view-id-news.view-display-id-block .views-field-title .field-content{
+    padding: 10px;
+}
+
+.view-news.view-id-news.view-display-id-block .views-field-title a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.view-news.view-id-news.view-display-id-block .views-field-title a:hover{
+    text-decoration: underline;
 }

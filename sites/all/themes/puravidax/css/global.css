@@ -10,6 +10,20 @@ body{
     background-color: #fff;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: verdana, arial;
+}
+
+h1{
+    font-size: 28px;
+}
+
+h2{
+    font-size: 22px !important;
+    font-weight: normal;
+}
+
+
 
 
 /*header stuff */
@@ -81,6 +95,41 @@ div.navigation li.active-trail{
 }
 
 
+/*Footer*/
+
+#section-footer{
+    text-align: center;
+}
+
+/*Footer Nav */
+.block-menu-footer-nav ul{display:inline-block;}
+.block-menu-footer-nav ul li.leaf{
+    list-style-image: none;
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 10px 0;
+    
+    font-size: 16px;
+}
+
+.block-menu-footer-nav ul li.leaf a{
+    border-right: 1px solid #464646;
+    padding: 0 10px;
+}
+
+
+.block-menu-footer-nav ul li.last.leaf a{
+    border: none;
+}
+
+/*Copyright message */
+.block-block-2{
+    font-size: 14px;
+}
+
+
+
 /*slideshow*/
 .field-name-field-slideshow{
     z-index: -1;
@@ -106,6 +155,10 @@ div.navigation li.active-trail{
 #slide-nav a:focus { outline: none; }
 
 /*news homepage view*/
+h2.block-title{
+    margin-bottom: 10px;
+}
+
 .view-news.view-id-news.view-display-id-block table{
     border: 3px solid #363636;
     border-collapse: collapse;
@@ -146,5 +199,51 @@ div.navigation li.active-trail{
 }
 
 .view-news.view-id-news.view-display-id-block .views-field-title a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*Team view homepage */
+.view-team-categories.view-id-team_categories.view-display-id-block table{
+    border: 3px solid #363636;
+    border-collapse: collapse;
+    -webkit-box-shadow:0 0 5px #363636; /* this item draw table border  */ 
+    box-shadow: 0 0 5px #363636;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border-style: hidden; /* hide standart table (collapsed) border */
+}
+
+
+
+.view-team-categories.view-id-team_categories.view-display-id-block td{
+    padding: 5px 0 5px 10px;
+    position: relative;
+
+    float: left;
+        
+}
+
+.view-team-categories.view-id-team_categories.view-display-id-block .views-field-name{
+    position: absolute;
+
+    bottom: 5px;
+    left: 10px;
+    width: 225px;
+    background: url('../images/opaque-grey.png') repeat;
+    padding: 10px 0;
+}
+
+.view-team-categories.view-id-team_categories.view-display-id-block .views-field-name .field-content{
+    padding: 10px;
+}
+
+.view-team-categories.view-id-team_categories.view-display-id-block .views-field-name a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.view-team-categories.view-id-team_categories.view-display-id-block .views-field-name a:hover{
     text-decoration: underline;
 }

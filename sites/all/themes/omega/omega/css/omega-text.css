@@ -2,21 +2,16 @@ body {
   font: 13px/1.5 Verdana, Helvetica, Arial, sans-serif;
 }
 
-a:link, a:visited {
-  color: #0062A0;
-  text-decoration: underline;
+a{
+  color: #464646;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #202124;
-  text-decoration: none;
+  color: #000;
+  text-decoration: underline;
 }
 
-a:active {
-  color: #202124;
-  text-decoration: none;
-  color: #000;
-}
 
 hr {
   margin: 0;

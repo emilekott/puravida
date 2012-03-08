@@ -46,7 +46,7 @@ $breadcrumb = $variables['breadcrumb'];
         // screen-reader users. Make the heading invisible with .element-invisible.
         $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
 
-        $crumbs = '<div class="breadcrumb">';
+        $crumbs = '<div class="breadcrumb"><span class="breadcrumb-description">You are here: </span>';
         $array_size = count($breadcrumb);
         $i = 0;
         while ($i < $array_size) {
@@ -57,7 +57,7 @@ $breadcrumb = $variables['breadcrumb'];
             /* if ($i+1 == $array_size) {
               $crumbs .= ' last';
               } */
-            $crumbs .= '">' . $breadcrumb[$i] . '</span>&nbsp;&nbsp;>&nbsp;&nbsp;';
+            $crumbs .= '">' . $breadcrumb[$i] . '</span>&nbsp;/&nbsp;';
             $i++;
         }
         $crumbs .= '<span class="active">' . drupal_get_title() . '</span></div>';

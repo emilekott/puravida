@@ -33,7 +33,7 @@ h2{
 }
 
 .block-uc-cart{
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 
@@ -154,7 +154,7 @@ div.navigation li.active-trail{
 #slide-nav a.activeSlide { background: #ff7f00}
 #slide-nav a:focus { outline: none; }
 
-/*news homepage view*/
+/*news homepage view
 h2.block-title{
     margin-bottom: 10px;
 }
@@ -162,11 +162,11 @@ h2.block-title{
 .view-news.view-id-news.view-display-id-block table{
     border: 3px solid #363636;
     border-collapse: collapse;
-    -webkit-box-shadow:0 0 5px #363636; /* this item draw table border  */ 
+    -webkit-box-shadow:0 0 5px #363636; 
     box-shadow: 0 0 5px #363636;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    border-style: hidden; /* hide standart table (collapsed) border */
+    border-style: hidden; 
 }
 
 
@@ -201,49 +201,79 @@ h2.block-title{
 .view-news.view-id-news.view-display-id-block .views-field-title a:hover{
     text-decoration: underline;
 }
-
-
-
-/*Team view homepage */
-.view-team-categories.view-id-team_categories.view-display-id-block table{
-    border: 3px solid #363636;
-    border-collapse: collapse;
-    -webkit-box-shadow:0 0 5px #363636; /* this item draw table border  */ 
-    box-shadow: 0 0 5px #363636;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    border-style: hidden; /* hide standart table (collapsed) border */
-}
-
-
-
-.view-team-categories.view-id-team_categories.view-display-id-block td{
-    padding: 5px 0 5px 10px;
-    position: relative;
-
+*/
+/*Homepage news view layout */
+.view-news .views-row{
     float: left;
-        
+    width: 225px;
+    margin: 5px;
+    position: relative;
 }
 
-.view-team-categories.view-id-team_categories.view-display-id-block .views-field-name{
-    position: absolute;
+.block-news-block .content{
+    margin: 2px;
+    border: 3px solid #363636;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-bottom: 10px;
+}
 
-    bottom: 5px;
-    left: 10px;
+.view-news .views-field-title{
+    position: absolute;
     width: 225px;
     background: url('../images/opaque-grey.png') repeat;
+    bottom: 0;
+    left: 0;
     padding: 10px 0;
+    
 }
 
-.view-team-categories.view-id-team_categories.view-display-id-block .views-field-name .field-content{
-    padding: 10px;
+.view-news .views-field-title .field-content{
+    margin: 10px;
 }
 
-.view-team-categories.view-id-team_categories.view-display-id-block .views-field-name a{
+
+
+.view-news .views-field-title a{
     color: #fff;
-    text-decoration: none;
 }
 
-.view-team-categories.view-id-team_categories.view-display-id-block .views-field-name a:hover{
-    text-decoration: underline;
+
+
+
+/*Homepage team view lauyout */
+.view-team-categories .views-row{
+    float: left;
+    width: 225px;
+    margin: 5px;
+    position: relative;
+}
+
+.block-team-categories-block .content{
+    margin: 2px;
+    border: 3px solid #363636;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.view-team-categories .views-field-name{
+    position: absolute;
+    width: 225px;
+    background: url('../images/opaque-grey.png') repeat;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    
+}
+
+.view-team-categories .views-field-name .field-content{
+    margin: 10px;
+}
+
+
+
+.view-team-categories .views-field-name a{
+    color: #fff;
 }

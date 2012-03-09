@@ -242,7 +242,7 @@ div.navigation{
 
 /*All other pages */
 .region-sidebar-first-inner{
-    padding: 10px;
+    padding: 20px;
     color: #fff;
 }
 
@@ -266,9 +266,18 @@ div.navigation{
     padding: 0;
 }
 
-.region-content-inner{
-    margin-right: 5px;
+.region-sidebar-first-inner ul li.leaf{
+    margin: 0;
+    padding: 0;
+    list-style-image: none;
+    list-style-type: none;
 }
+
+.region-sidebar-first-inner .block{
+    margin-bottom: 30px;
+}
+
+
 
 
 
@@ -303,6 +312,10 @@ div.navigation{
     font-weight: bold;
 }
 
+
+.pager-previous a{
+    width: 70px !important;
+}
 
 /*Individual news item */
 .field-name-field-news-images{

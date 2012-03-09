@@ -250,7 +250,7 @@ div.navigation{
     color: #fff;
 }
 
-.region-sidebar-first-inner a.active{
+.region-sidebar-first-inner a.active, .region-sidebar-first-inner a.active-trail{
     color: #FF7F00;
 }
 

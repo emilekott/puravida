@@ -34,6 +34,10 @@ h2{
 }
 
 
+.form-actions input{
+    margin: 0 !important;
+}
+
 
 /*header stuff */
 
@@ -333,4 +337,43 @@ div.navigation{
 
 .field-name-field-news-images img:hover{
     background-color: #363636;
+}
+
+/*Product category page */
+.view-id-taxonomy_term .view-content .views-row{
+    width: 130px;
+    float: left;
+    text-align: center;
+    border: 3px solid #363636;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    height: 320px;
+    position: relative;
+}
+
+.views-field-buyitnowbutton .form-actions input{
+    position: absolute;
+    bottom: 10px;
+    left: 22px;
+}
+
+.view-id-taxonomy_term .views-field.views-field-title {
+    font-weight: bold;
+    margin: 10px 0;
+    position: absolute;
+top: 210px;
+width: 100%;
+text-align: center;
+left: 0;
+}
+
+.view-id-taxonomy_term .views-field-sell-price{
+    position: absolute;
+bottom: 50px;
+width: 100%;
+text-align: center;
+left: 0;
 }

@@ -39,6 +39,10 @@ h2{
 }
 
 
+.breadcrumb{
+    font-weight: bold;
+}
+
 /*header stuff */
 
 .block-1 p{
@@ -385,7 +389,15 @@ left: 0;
     clear: none !important;
     float: left !important;
     margin: 0 !important;
-    padding: 0 !important;
+      border: 3px solid #363636;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 5px;
+}
+
+.more-product-images img{
+   margin: 5px;
 }
 
 .field-name-uc-product-image{
@@ -408,7 +420,7 @@ left: 0;
 }
 
 .product-info.display-price, .attributes, div#edit-actions {
-    width: 400px;
+    width: 370px;
     float: right;
     text-align: right;
     padding-right: 30px;
@@ -425,4 +437,11 @@ left: 0;
 
 .product-info.display-price{
    
+}
+
+/*standard page styling */
+.field-name-field-standard-page-image{
+    width: 400px;
+    float: right;
+    margin-bottom: 10px;
 }

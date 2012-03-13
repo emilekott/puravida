@@ -67,9 +67,10 @@ $breadcrumb = $variables['breadcrumb'];
 
 function puravidax_form_alter(&$form, &$form_state, $form_id) {
     //theme add to cart buttons etc.
-    if (preg_match('/uc_catalog_buy_it_now_form/', $form_id)){
+    if (preg_match('/uc_catalog_buy_it_now_form/', $form_id) || preg_match('/uc_product_add_to_cart_form/', $form_id)){
         $form['actions']['submit'] = array('#type' => 'image_button', '#src' => base_path().'/sites/all/themes/puravidax/images/buy-now.jpg');
     }
+    
     /*
     if ($form_id == 'search_block_form') {
         $form['search_block_form']['#title'] = t('Search'); 

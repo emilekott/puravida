@@ -447,3 +447,11 @@ left: 0;
 .webform-component textarea{
     width: 400px;
 }
+
+
+/*Block tab stuff */
+
+/*remove block title display */
+.block_tab-block h2.block-title{
+    display: none;
+}

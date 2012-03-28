@@ -3,6 +3,7 @@
 (function($) {
   Drupal.behaviors.BlockTab = {
     attach: function() {
+      //$('.region-preface-first-inner').prepend('<h2 class="block-title">Best Sellers</h2>')
       $('.block_tab-block').hide();
       $('.block_tab-block:first', '.block_tab-blocks').show();
 

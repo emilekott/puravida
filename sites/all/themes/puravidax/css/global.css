@@ -451,7 +451,77 @@ left: 0;
 
 /*Block tab stuff */
 
-/*remove block title display */
+.block_tab-block{
+    display: none;
+}
+
+.block_tab-block.visible{
+    display: block;
+}
+
 .block_tab-block h2.block-title{
     display: none;
+}
+
+.region-preface-first{
+    margin-top: 10px;
+}
+
+.block_tab-titles{
+    margin: 10px 0;
+}
+
+.block_tab-titles .block_tab-title{
+    font-size: 15px;
+    height: 35px;
+    background-color: #363636;
+    margin-right: 0;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+.block_tab-titles .block_tab-title.active{
+    font-weight: normal;
+    text-decoration:none;
+    color: #FF7F00;
+    
+}
+
+
+.view-id-best_sellers_blocks .view-content .views-row{
+    width: 130px;
+    float: left;
+    text-align: center;
+    border: 3px solid #363636;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    height: 320px;
+    position: relative;
+}
+
+.views-field-buyitnowbutton .form-actions input{
+    position: absolute;
+    bottom: 10px;
+    left: 22px;
+}
+
+.view-id-taxonomy_term .views-field.views-field-title {
+    font-weight: bold;
+    margin: 10px 0;
+    position: absolute;
+top: 210px;
+width: 100%;
+text-align: center;
+left: 0;
+}
+
+.view-id-taxonomy_term .views-field-sell-price{
+    position: absolute;
+bottom: 50px;
+width: 100%;
+text-align: center;
+left: 0;
 }

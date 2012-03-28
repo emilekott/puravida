@@ -82,8 +82,8 @@ function block_tab_preprocess_region(&$variables) {
     foreach ((array) $titles as $title) {
       $title_html .= '<span class="block_tab-title' . $title['active'] . '" id="block_tab-title-' . $title['key'] . '">' . check_plain($title['title']) . '</span>';
     }
-
-    $variables['content'] = '<div class="block_tab-titles" region="' . $region . '">' . $title_html . '</div>
+    //would be better to add a title setting to the region in admin - hard-coded here for now
+    $variables['content'] = '<h2 class="block-title">Best Sellers</h2><div class="block_tab-titles" region="' . $region . '">' . $title_html . '</div>
           <div class="block_tab-blocks" region="' . $region . '">' . $output . '</div>';
   }
 }
